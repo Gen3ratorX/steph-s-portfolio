@@ -232,19 +232,30 @@ lightbox.addEventListener('touchend', e => {
   swipeX = null;
 }, { passive: true });
 
-// Lazy-load videos: assign src only when near viewport, pause when far away
+// Lazy-load videos: only load when in view, shimmer until ready
+document.querySelectorAll('.gallery-item[data-type="video"]').forEach(el => el.classList.add('gi-loading'));
+
 const videoIO = new IntersectionObserver(entries => {
   entries.forEach(e => {
-    const v = e.target.querySelector('video');
+    const item = e.target;
+    const v = item.querySelector('video');
     if (!v) return;
     if (e.isIntersecting) {
-      if (!v.src && v.dataset.src) v.src = v.dataset.src;
-      v.play().catch(() => {});
+      if (!v.src && v.dataset.src) {
+        v.src = v.dataset.src;
+        v.addEventListener('canplay', () => {
+          item.classList.remove('gi-loading');
+          item.classList.add('gi-ready');
+          v.play().catch(() => {});
+        }, { once: true });
+      } else {
+        v.play().catch(() => {});
+      }
     } else {
       v.pause();
     }
   });
-}, { threshold: 0.05, rootMargin: '300px' });
+}, { threshold: 0.05, rootMargin: '0px' });
 document.querySelectorAll('.gallery-item').forEach(el => videoIO.observe(el));
 
 // Contact form
