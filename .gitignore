@@ -1,0 +1,7 @@
+# Videos served from GitHub Releases CDN instead
+assets/*.mp4
+assets/*.MOV
+assets/*.mov
+
+# macOS
+.DS_Store

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stephanie Kombat-Monfant — Social Media Manager & Graphic Designer</title>
+  <meta name="description" content="Social media manager and graphic designer based in Accra, Ghana. I design content that stops the scroll and strategies that keep people watching." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,ital,wght@9..144,0,700;9..144,1,700;9..144,0,300;9..144,1,300&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor" id="cursor"><div class="cursor__ring"></div></div>
+
+  <svg class="grain" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <filter id="gf">
+      <feTurbulence id="grainT" type="fractalNoise" baseFrequency="0.75" numOctaves="4" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+    <rect width="100%" height="100%" filter="url(#gf)"/>
+  </svg>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#home" class="nav__logo">Stephanie<span>.</span></a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+      <nav class="nav__links" id="navLinks">
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ── Hero ──────────────────────────────────── -->
+    <section class="hero" id="home">
+      <div class="hero__inner">
+
+        <div class="hero__top">
+          <span class="hero__role">Social Media Manager &amp; Graphic Designer · Accra, Ghana</span>
+          <span class="hero__avail"><span class="hero__dot"></span>Open to new projects</span>
+        </div>
+
+        <!-- Left: real brands she manages -->
+        <aside class="hero__cards" aria-label="Brands I work with">
+
+          <a class="hp-card" href="#work">
+            <!--
+              REPLACE GRADIENT WITH REAL IMAGE:
+              Remove the style below and add:
+              style="background-image: url('images/glam-divas.jpg'); background-size: cover; background-position: center;"
+            -->
+            <div class="hp-card__thumb" style="--g:linear-gradient(135deg,#f7a8c4,#f9d4e6)"></div>
+            <div class="hp-card__body">
+              <p class="hp-card__name">Glam Divas Academy</p>
+              <p class="hp-card__sub">Instagram · TikTok</p>
+            </div>
+            <span class="hp-card__stat">@glam_divas_academy21</span>
+          </a>
+
+          <a class="hp-card" href="#work">
+            <div class="hp-card__thumb" style="--g:linear-gradient(135deg,#ff9eb5,#ffccd5)"></div>
+            <div class="hp-card__body">
+              <p class="hp-card__name">Pink Panda Co.</p>
+              <p class="hp-card__sub">Instagram · 3 sub-brands</p>
+            </div>
+            <span class="hp-card__stat">Multi-platform</span>
+          </a>
+
+          <a class="hp-card" href="#work">
+            <div class="hp-card__thumb" style="--g:linear-gradient(135deg,#a8d8ea,#c9e8f0)"></div>
+            <div class="hp-card__body">
+              <p class="hp-card__name">External Links</p>
+              <p class="hp-card__sub">Instagram</p>
+            </div>
+            <span class="hp-card__stat">@external.links</span>
+          </a>
+
+          <a class="hp-card" href="#work">
+            <div class="hp-card__thumb" style="--g:linear-gradient(135deg,#b8e0b8,#d4f0d4)"></div>
+            <div class="hp-card__body">
+              <p class="hp-card__name">Presbyterian University</p>
+              <p class="hp-card__sub">Brand Identity · 3 years</p>
+            </div>
+            <span class="hp-card__stat">Official GD</span>
+          </a>
+
+        </aside>
+
+        <!-- Right: headline -->
+        <div class="hero__content">
+          <h1 class="hero__headline">
+            <span class="h-line">Hi, I'm Stephanie.</span>
+            <span class="h-line">I make content</span>
+            <span class="h-line"><em>impossible</em> to scroll past.</span>
+          </h1>
+          <p class="hero__sub">Graphic design meets social media strategy — I build the look, write the plan, and show up consistently so your brand doesn't have to guess what to post next.</p>
+          <div class="hero__ctas">
+            <a href="#work" class="btn-pill">See my work</a>
+            <a href="#contact" class="arrow-link">Let's talk</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── Ticker ─────────────────────────────────── -->
+    <div class="ticker" aria-label="Brands worked with">
+      <div class="ticker__track">
+        <span>Glam Divas Academy</span><span class="sep">×</span>
+        <span>Pink Panda Co.</span><span class="sep">×</span>
+        <span>External Links</span><span class="sep">×</span>
+        <span>Presbyterian University</span><span class="sep">×</span>
+        <span>ESA, GCTU</span><span class="sep">×</span>
+        <span>Top Choco Ghana</span><span class="sep">×</span>
+        <span>Glam Divas Academy</span><span class="sep">×</span>
+        <span>Pink Panda Co.</span><span class="sep">×</span>
+        <span>External Links</span><span class="sep">×</span>
+        <span>Presbyterian University</span><span class="sep">×</span>
+        <span>ESA, GCTU</span><span class="sep">×</span>
+        <span>Top Choco Ghana</span><span class="sep">×</span>
+      </div>
+    </div>
+
+    <!-- ── Work ──────────────────────────────────── -->
+    <section class="work" id="work">
+      <div class="work__head reveal">
+        <div>
+          <p class="section-label">Selected work <span class="dot-acc">●</span></p>
+          <h2>Brands I've helped <em>grow.</em></h2>
+        </div>
+        <div class="filters" id="filters">
+          <button class="filter is-active" data-filter="all">All</button>
+          <button class="filter" data-filter="social">Social Media</button>
+          <button class="filter" data-filter="design">Graphic Design</button>
+          <button class="filter" data-filter="brand">Branding</button>
+        </div>
+      </div>
+
+      <div id="workGrid">
+
+        <a class="work-item reveal" data-cat="social" href="#">
+          <span class="work-num">01</span>
+          <div class="work-info">
+            <h3>Glam Divas Academy</h3>
+            <p>Content creation, brand strategy &amp; audience growth across Instagram and TikTok</p>
+          </div>
+          <div class="work-meta">
+            <span class="tag">Instagram · TikTok</span>
+            <span class="metric">@glam_divas_academy21 · @glamdivas0</span>
+          </div>
+          <span class="wi-arrow">→</span>
+        </a>
+
+        <a class="work-item reveal" data-cat="social" href="#">
+          <span class="work-num">02</span>
+          <div class="work-info">
+            <h3>Pink Panda Company</h3>
+            <p>Social media management + motion graphics for Pink Panda, pink Kafé &amp; Wonderland by Pink Panda</p>
+          </div>
+          <div class="work-meta">
+            <span class="tag">Multi-platform</span>
+            <span class="metric">3 sub-brands managed</span>
+          </div>
+          <span class="wi-arrow">→</span>
+        </a>
+
+        <a class="work-item reveal" data-cat="social" href="#">
+          <span class="work-num">03</span>
+          <div class="work-info">
+            <h3>External Links</h3>
+            <p>Instagram content management — building brand voice and consistent visual presence</p>
+          </div>
+          <div class="work-meta">
+            <span class="tag">Instagram</span>
+            <span class="metric">@external.links</span>
+          </div>
+          <span class="wi-arrow">→</span>
+        </a>
+
+        <a class="work-item reveal" data-cat="brand" href="#">
+          <span class="work-num">04</span>
+          <div class="work-info">
+            <h3>Presbyterian University, Ghana</h3>
+            <p>Official graphic designer — brand identity, event materials &amp; university communications</p>
+          </div>
+          <div class="work-meta">
+            <span class="tag">Branding</span>
+            <span class="metric">3 years · Official GD</span>
+          </div>
+          <span class="wi-arrow">→</span>
+        </a>
+
+        <a class="work-item reveal" data-cat="design" href="#">
+          <span class="work-num">05</span>
+          <div class="work-info">
+            <h3>ESA, GCTU</h3>
+            <p>Visual content, event campaigns &amp; graphic design instruction for the Engineering Students Association</p>
+          </div>
+          <div class="work-meta">
+            <span class="tag">Design · Education</span>
+            <span class="metric">2 yrs design · 1 yr teaching</span>
+          </div>
+          <span class="wi-arrow">→</span>
+        </a>
+
+        <a class="work-item reveal" data-cat="brand" href="#">
+          <span class="work-num">06</span>
+          <div class="work-info">
+            <h3>Top Choco Ghana</h3>
+            <p>Campus ambassador — promotional campaigns, events &amp; social media activation across campus</p>
+          </div>
+          <div class="work-meta">
+            <span class="tag">Brand Ambassador</span>
+            <span class="metric">1 year · Campus-wide</span>
+          </div>
+          <span class="wi-arrow">→</span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ── Gallery ───────────────────────────────── -->
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <p class="section-label reveal">Work samples <span class="dot-acc">●</span></p>
+        <h2 class="section-title reveal">Designs &amp; <em>content.</em></h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-col">
+          <figure class="gallery-item" data-index="0" data-type="image" data-src="assets/img-01.jpg"><img src="assets/img-01.jpg" alt="Chairman Bakes — menu flyer" loading="lazy"></figure>
+          <figure class="gallery-item" data-index="3" data-type="video" data-src="assets/vid-02.mp4"><video src="assets/vid-02.mp4" autoplay muted loop playsinline></video><span class="g-play" aria-hidden="true">▶</span></figure>
+          <figure class="gallery-item" data-index="6" data-type="image" data-src="assets/img-04.jpg"><img src="assets/img-04.jpg" alt="Graphic design work" loading="lazy"></figure>
+          <figure class="gallery-item" data-index="9" data-type="video" data-src="assets/vid-05.mp4"><video src="assets/vid-05.mp4" autoplay muted loop playsinline></video><span class="g-play" aria-hidden="true">▶</span></figure>
+          <figure class="gallery-item" data-index="12" data-type="image" data-src="assets/img-07.jpg"><img src="assets/img-07.jpg" alt="Graphic design work" loading="lazy"></figure>
+          <figure class="gallery-item" data-index="15" data-type="video" data-src="assets/vid-08.mp4"><video src="assets/vid-08.mp4" autoplay muted loop playsinline></video><span class="g-play" aria-hidden="true">▶</span></figure>
+          <figure class="gallery-item" data-index="18" data-type="image" data-src="assets/img-10.jpg"><img src="assets/img-10.jpg" alt="Product photography — cake" loading="lazy"></figure>
+          <figure class="gallery-item" data-index="21" data-type="video" data-src="assets/vid-11.mp4"><video src="assets/vid-11.mp4" autoplay muted loop playsinline></video><span class="g-play" aria-hidden="true">▶</span></figure>
+          <figure class="gallery-item" data-index="24" data-type="image" data-src="assets/img-13.jpg"><img src="assets/img-13.jpg" alt="Product photography — cake detail" loading="lazy"></figure>
+          <figure class="gallery-item" data-index="27" data-type="video" data-src="assets/vid-14.mp4"><video src="assets/vid-14.mp4" autoplay muted loop playsinline></video><span class="g-play" aria-hidden="true">▶</span></figure>
+        </div>
+        <div class="gallery-col">
+          <figure class="gallery-item" data-index="1" data-type="video" data-src="assets/vid-01.mp4"><video src="assets/vid-01.mp4" autoplay muted loop playsinline></video><span class="g-play" aria-hidden="true">▶</span></figure>
+          <figure class="gallery-item" data-index="4" data-type="image" data-src="assets/img-03.jpg"><img src="assets/img-03.jpg" alt="Graphic design work" loading="lazy"></figure>
+          <figure class="gallery-item" data-index="7" data-type="video" data-src="assets/vid-04.mp4"><video src="assets/vid-04.mp4" autoplay muted loop playsinline></video><span class="g-play" aria-hidden="true">▶</span></figure>
+          <figure class="gallery-item" data-index="10" data-type="image" data-src="assets/img-06.jpg"><img src="assets/img-06.jpg" alt="Rafaeli's Galeto — grand opening flyer" loading="lazy"></figure>
+          <figure class="gallery-item" data-index="13" data-type="video" data-src="assets/vid-07.mp4"><video src="assets/vid-07.mp4" autoplay muted loop playsinline></video><span class="g-play" aria-hidden="true">▶</span></figure>
+          <figure class="gallery-item" data-index="16" data-type="image" data-src="assets/img-09.jpg"><img src="assets/img-09.jpg" alt="Pink Panda Bakery — social post" loading="lazy"></figure>
+          <figure class="gallery-item" data-index="19" data-type="video" data-src="assets/vid-10.mp4"><video src="assets/vid-10.mp4" autoplay muted loop playsinline></video><span class="g-play" aria-hidden="true">▶</span></figure>
+          <figure class="gallery-item" data-index="22" data-type="image" data-src="assets/img-12.jpg"><img src="assets/img-12.jpg" alt="Graphic design work" loading="lazy"></figure>
+          <figure class="gallery-item" data-index="25" data-type="video" data-src="assets/vid-13.mp4"><video src="assets/vid-13.mp4" autoplay muted loop playsinline></video><span class="g-play" aria-hidden="true">▶</span></figure>
+          <figure class="gallery-item" data-index="28" data-type="video" data-src="assets/vid-15.mp4"><video src="assets/vid-15.mp4" autoplay muted loop playsinline></video><span class="g-play" aria-hidden="true">▶</span></figure>
+        </div>
+        <div class="gallery-col">
+          <figure class="gallery-item" data-index="2" data-type="image" data-src="assets/img-02.jpg"><img src="assets/img-02.jpg" alt="Chairman Bakes — business card" loading="lazy"></figure>
+          <figure class="gallery-item" data-index="5" data-type="video" data-src="assets/vid-03.mp4"><video src="assets/vid-03.mp4" autoplay muted loop playsinline></video><span class="g-play" aria-hidden="true">▶</span></figure>
+          <figure class="gallery-item" data-index="8" data-type="image" data-src="assets/img-05.jpg"><img src="assets/img-05.jpg" alt="Mimi Cooks — shito label design" loading="lazy"></figure>
+          <figure class="gallery-item" data-index="11" data-type="video" data-src="assets/vid-06.mp4"><video src="assets/vid-06.mp4" autoplay muted loop playsinline></video><span class="g-play" aria-hidden="true">▶</span></figure>
+          <figure class="gallery-item" data-index="14" data-type="image" data-src="assets/img-08.jpg"><img src="assets/img-08.jpg" alt="Graphic design work" loading="lazy"></figure>
+          <figure class="gallery-item" data-index="17" data-type="video" data-src="assets/vid-09.mp4"><video src="assets/vid-09.mp4" autoplay muted loop playsinline></video><span class="g-play" aria-hidden="true">▶</span></figure>
+          <figure class="gallery-item" data-index="20" data-type="image" data-src="assets/img-11.jpg"><img src="assets/img-11.jpg" alt="Graphic design work" loading="lazy"></figure>
+          <figure class="gallery-item" data-index="23" data-type="video" data-src="assets/vid-12.mp4"><video src="assets/vid-12.mp4" autoplay muted loop playsinline></video><span class="g-play" aria-hidden="true">▶</span></figure>
+          <figure class="gallery-item" data-index="26" data-type="image" data-src="assets/img-14.jpg"><img src="assets/img-14.jpg" alt="Graphic design work" loading="lazy"></figure>
+          <figure class="gallery-item" data-index="29" data-type="video" data-src="assets/vid-16.mp4"><video src="assets/vid-16.mp4" autoplay muted loop playsinline></video><span class="g-play" aria-hidden="true">▶</span></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Services ───────────────────────────────── -->
+    <section class="section services" id="services">
+      <div class="services__inner">
+        <div class="services__desc reveal">
+          <p class="section-label">What I do <span class="dot-acc">●</span></p>
+          <h2>Design and strategy — <em>together.</em></h2>
+          <p>Most people hire a designer or a social media manager. I'm both — which means your content looks right and lands right, without the gap in between.</p>
+          <p style="margin-top:14px;font-size:0.88rem;color:var(--text-dim)">Tools: Photoshop · Photopea · Canva · HTML/CSS/JS</p>
+        </div>
+        <ol class="services__list">
+          <li class="svc reveal">
+            <span class="svc__num">01</span>
+            <div>
+              <h3>Content Creation</h3>
+              <p>Reels, carousels, graphics, and motion design — from concept to ready-to-post.</p>
+            </div>
+          </li>
+          <li class="svc reveal">
+            <span class="svc__num">02</span>
+            <div>
+              <h3>Social Media Management</h3>
+              <p>Strategy, scheduling, captions, and community engagement across Instagram and TikTok.</p>
+            </div>
+          </li>
+          <li class="svc reveal">
+            <span class="svc__num">03</span>
+            <div>
+              <h3>Brand Identity</h3>
+              <p>Consistent visual language — colours, fonts, tone — so your feed looks like one brand, not a mood board.</p>
+            </div>
+          </li>
+          <li class="svc reveal">
+            <span class="svc__num">04</span>
+            <div>
+              <h3>Graphic Design</h3>
+              <p>Marketing materials, event flyers, promotional graphics, and everything in between.</p>
+            </div>
+          </li>
+          <li class="svc reveal">
+            <span class="svc__num">05</span>
+            <div>
+              <h3>Motion &amp; Video Graphics</h3>
+              <p>Animated graphics and motion design that match and elevate your brand identity.</p>
+            </div>
+          </li>
+          <li class="svc reveal">
+            <span class="svc__num">06</span>
+            <div>
+              <h3>Campaign Planning</h3>
+              <p>End-to-end campaign strategy — audience research, content pillars, and execution plan.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ── About ──────────────────────────────────── -->
+    <section class="section about" id="about">
+      <p class="section-label reveal">About me <span class="dot-acc">●</span></p>
+      <div class="about__inner">
+
+        <div class="about__left reveal">
+          <div class="about__photo">
+            <!--
+              ADD PHOTO HERE:
+              Replace the .about__photo-img div below with:
+              <img src="images/stephanie.jpg" alt="Stephanie Kombat-Monfant" class="about__photo-img about__photo-img--real" />
+            -->
+            <div class="about__photo-img">SK</div>
+            <span class="about__badge">Accra, GH</span>
+          </div>
+        </div>
+
+        <div class="about__right">
+          <blockquote class="about__quote reveal">
+            "I come from engineering — I think in systems. But I work in design and storytelling. That combination is what makes the content actually work."
+          </blockquote>
+          <div class="about__cols">
+            <p class="reveal">I'm Stephanie Kombat-Monfant — a Computer Engineering graduate from GCTU who crossed over into design and never looked back. For 3+ years I've been the official graphic designer behind university organisations, managing brand identity and visual campaigns from the ground up.</p>
+            <div class="reveal">
+              <p>I now combine that design foundation with social media strategy — building content systems that work for Glam Divas Academy, Pink Panda Company, and the brands I manage day-to-day out of Accra.</p>
+              <a href="#contact" class="btn-pill btn-pill--outline" style="margin-top:24px">Work with me</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── Stats ──────────────────────────────────── -->
+    <div class="stats-strip">
+      <div class="stat reveal"><strong data-count="3" data-suffix="+">0</strong><span>years in design</span></div>
+      <div class="stat reveal"><strong data-count="6" data-suffix="+">0</strong><span>brands &amp; clients</span></div>
+      <div class="stat reveal"><strong data-count="3">0</strong><span>platforms managed</span></div>
+      <div class="stat reveal"><strong>BSc</strong><span>Computer Engineering</span></div>
+    </div>
+
+    <!-- ── Testimonials ───────────────────────────── -->
+    <section class="section testimonials">
+      <p class="section-label reveal" style="text-align:center;margin-bottom:48px">Kind words <span class="dot-acc">●</span></p>
+      <figure class="testimonial reveal">
+        <!--
+          REPLACE WITH REAL TESTIMONIALS when you collect them.
+          Ask Bernice (Glam Divas) or your Pink Panda contact for a quote.
+        -->
+        <blockquote>"Stephanie consistently delivers visuals that capture exactly what we want to communicate. She understands brand and audience."</blockquote>
+        <figcaption>Bernice Tamakloe, Glam Divas Academy</figcaption>
+      </figure>
+      <figure class="testimonial reveal">
+        <blockquote>"She managed three of our brands simultaneously without dropping quality on any of them. That's rare."</blockquote>
+        <figcaption>Pink Panda Company Limited</figcaption>
+      </figure>
+    </section>
+
+    <!-- ── Contact ────────────────────────────────── -->
+    <section class="section contact" id="contact">
+      <div class="contact__inner">
+        <div class="contact__left reveal">
+          <p class="section-label">Get in touch <span class="dot-acc">●</span></p>
+          <h2>Let's build something.</h2>
+          <p>I'm based in Accra and open to local and remote projects — social media management, graphic design, brand identity, or all three.</p>
+          <a href="mailto:monfantstephanie@gmail.com" class="contact__email">monfantstephanie@gmail.com</a>
+          <div class="contact__details">
+            <a href="tel:+233594952208">+233 59 495 2208</a>
+            <span>Accra, Kwashieman</span>
+          </div>
+          <div class="contact__socials">
+            <a href="https://instagram.com/glam_divas_academy21" target="_blank" rel="noopener">Instagram (Glam Divas)</a>
+            <a href="https://www.tiktok.com/@glamdivas0" target="_blank" rel="noopener">TikTok (Glam Divas)</a>
+          </div>
+        </div>
+        <form class="contact__form reveal" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@brand.com" required />
+          </div>
+          <div class="field">
+            <label for="message">What do you need?</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell me about your brand, platforms, and what you're trying to achieve..." required></textarea>
+          </div>
+          <button type="submit" class="btn-pill">Send message <span>→</span></button>
+          <p class="form__note" id="formNote" hidden>Thanks! Connect this form to <a href="https://formspree.io" target="_blank" style="color:var(--accent)">Formspree</a> to receive messages in your inbox.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Media viewer">
+    <button class="lightbox__close" id="lbClose" aria-label="Close">✕</button>
+    <button class="lightbox__prev" id="lbPrev" aria-label="Previous">←</button>
+    <button class="lightbox__next" id="lbNext" aria-label="Next">→</button>
+    <div class="lightbox__media" id="lbMedia"></div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span>© <span id="year"></span> Stephanie Kombat-Monfant · Accra, Ghana</span>
+      <div class="footer__socials">
+        <a href="https://instagram.com/glam_divas_academy21" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.tiktok.com/@glamdivas0" target="_blank" rel="noopener">TikTok</a>
+        <a href="mailto:monfantstephanie@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
