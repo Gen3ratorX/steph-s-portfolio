@@ -315,6 +315,10 @@ em { font-style: italic; }
   display: grid; place-items: center;
   font-family: var(--display); font-size: 5rem; font-weight: 700; color: var(--text-dim);
 }
+.about__photo-img--real {
+  display: block; object-fit: cover; object-position: center top;
+  font-size: 0;
+}
 .about__badge {
   position: absolute; bottom: -14px; right: -14px;
   background: var(--accent); color: var(--bg);
@@ -401,7 +405,8 @@ em { font-style: italic; }
   .hero__content { grid-row: 2; }
   .services__inner { grid-template-columns: 1fr; gap: 40px; }
   .about__inner { grid-template-columns: 1fr; }
-  .about__left { display: none; }
+  .about__left { display: flex; justify-content: center; margin-bottom: 8px; }
+  .about__photo-img { width: 160px; height: 210px; }
   .about__cols { grid-template-columns: 1fr; gap: 24px; }
   .stats-strip { grid-template-columns: repeat(2, 1fr); gap: 40px 0; padding: 56px 24px; }
   .stat + .stat::before { display: none; }
