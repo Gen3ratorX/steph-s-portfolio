@@ -232,14 +232,19 @@ lightbox.addEventListener('touchend', e => {
   swipeX = null;
 }, { passive: true });
 
-// Pause off-screen videos to save battery/CPU
+// Lazy-load videos: assign src only when near viewport, pause when far away
 const videoIO = new IntersectionObserver(entries => {
   entries.forEach(e => {
     const v = e.target.querySelector('video');
     if (!v) return;
-    if (e.isIntersecting) { v.play().catch(() => {}); } else { v.pause(); }
+    if (e.isIntersecting) {
+      if (!v.src && v.dataset.src) v.src = v.dataset.src;
+      v.play().catch(() => {});
+    } else {
+      v.pause();
+    }
   });
-}, { threshold: 0.2 });
+}, { threshold: 0.05, rootMargin: '300px' });
 document.querySelectorAll('.gallery-item').forEach(el => videoIO.observe(el));
 
 // Contact form
